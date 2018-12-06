@@ -4,14 +4,15 @@
 ##end
 #
 Blogger::Application.routes.draw do
+
   root to: 'articles#index'
   resources :articles do
-
-end
-resources :articles do
     resources :comments
   end
+  resources :tags
+
 end
+
   
 
   
