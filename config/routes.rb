@@ -1,8 +1,8 @@
-##Rails.application.routes.draw do
-###  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-##  resources :articles :comments
-##end
-#
+Rails.application.routes.draw do
+#  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+root 'articles#index'  
+
+end
 Blogger::Application.routes.draw do
 
   root to: 'articles#index'
